@@ -3,7 +3,7 @@ name: Deploy to Minikube using GitHub Actions
 on: 
   push:
     branches:
-      - main  # Change to your branch name if necessary
+      - main  
 
 jobs:
   job1:
@@ -34,12 +34,12 @@ jobs:
       run: sleep 100  # Allow time for Minikube to start the pods
 
     - name: Check pod status
-      run: kubectl get pods  # This will show you the status of the pods
+      run: kubectl get pods  # Shows the status of the pods
 
     - name: Describe pod
-      run: kubectl describe pod nodejs-app  # This will help you debug issues with the pod
+      run: kubectl describe pod nodejs-app  # Debug issues with the pod
 
     - name: Test service URLs
       run: |
           minikube service list
-          minikube service nodejs-app --url  # This will give you the URL to access the service
+          minikube service nodejs-app --url
