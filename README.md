@@ -1,5 +1,3 @@
-# nodejs-minikube-deployment
-
 # Node.js App Deployment to Minikube with GitHub Actions  
 
 This repository demonstrates how to deploy a Node.js application to a local Kubernetes cluster running on **Minikube**, using **GitHub Actions**. The project is designed for testing and development purposes, helping you automate deployments and validate your app before pushing to a production environment.  
